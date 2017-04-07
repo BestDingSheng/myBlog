@@ -4,9 +4,9 @@
 
 # Site
 title: Deson‘s Blog
-subtitle: 以梦为马，浪迹天涯
-description: 以梦为马，浪迹天涯
-author: 爱旅游的丁小盛
+subtitle: 当了累了休息的时候，不要忘了看看比你优秀的人还在努力奔跑
+description: 丁盛的博客
+author: 爱学习的丁小盛
 language:
 timezone:
 
@@ -90,5 +90,5 @@ jsonContent:
       link: false
       permalink: false
       excerpt: true
-      categories: false
+      categories: true
       tags: true

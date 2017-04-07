@@ -2,21 +2,23 @@
 
 menu:
   主页: /
-  # 随笔: /tags/随笔/
+  随笔: /tags/随笔/
+  游记: /tags/游记/
+
 
 # SubNav
 subnav:
-  github: "www.ding1996.cn"
-  weibo: "#"
-  zhihu: "#"
+  github: "https://github.com/BestDingSheng"
+  weibo: "https://juejin.im/timeline"
+  zhihu: "https://www.zhihu.com/"
   #qq: "#"
-  weixin: "#"
-  #jianshu: "#"
+  # weixin: "#"
+  jianshu: "http://www.jianshu.com/"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  #mail: "mailto:727040141@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -47,7 +49,7 @@ open_in_new: false
 # 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+reward_wording: '支持原创是对你我最大的支持- -。'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: /uploads/alipay-reward-image.jpg
 # 微信二维码图片地址
@@ -59,7 +61,7 @@ google_analytics: ''
 favicon: /favicon.ico
 
 #你的头像url
-avatar: /uploads/avatar.jpg
+avatar: /uploads/touxiang.png
 
 #是否开启分享
 share_jia: true
@@ -76,7 +78,7 @@ duoshuo_info:
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  header: '#4d4d4d'
+  header: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
 
@@ -92,15 +94,15 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: '所有文章'
-  friends: '友链'
+  friends: '友情链接'
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  掘金: https://juejin.im/welcome 
+  vu2x: https://www.v2ex.com/
+  vue中文网: https://cn.vuejs.org/v2/guide/
+  myProject: https://github.com/BestDingSheng/Learn-and-Share
+  Mac破解软件: http://xclient.info/
+  CNode中文社区: https://cnodejs.org/  
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 看得懂的，都不是命运。<br>说得清的，都不叫爱情。<br>忘得了的，都不是遗憾。<br>听得见的，都不是伤心。<br>躲得开的，都不是缘分。<br>猜得透的，都不叫人生。
