@@ -1,7 +1,12 @@
 ---
 title: Git与Angular入门
+<<<<<<< HEAD:source/_posts/it_ng-2.md
 date: 2016-10-16 18:54:14
 tags: angular
+=======
+date: 2016-10-15 18:54:14
+tags: git&&node
+>>>>>>> d91bb7c23220559e6b55c0770726c7cf20effc06:source/_posts/it_ng-2.md
 categories: 技术
 ---
 

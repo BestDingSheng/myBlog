@@ -4,7 +4,11 @@ date: 2017-04-01 17:51:11
 tags: 随笔
 ---
 
+<<<<<<< HEAD
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 align='center' height=86 src="//music.163.com/outchain/player?type=2&id=29947420&auto=0&height=66"></iframe>
+=======
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 align='center' height=86 src="//music.163.com/outchain/player?type=2&id=29947420&auto=1&height=66"></iframe>
+>>>>>>> d91bb7c23220559e6b55c0770726c7cf20effc06
 
 爱情有时候是这样，你懂的越多，就会被伤的越深。而你被伤的越深，就会懂的更多。到最后你会发现，其实真正能陪你到老的那个人，是什么都不需要你懂的那一个。让你活的没心没肺，才是最好的那个人。
 ![](http://www.59xihuan.cn/uploads/allimg/20130607/21061370594900-lp.jpg)

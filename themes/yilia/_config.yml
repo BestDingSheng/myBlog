@@ -9,8 +9,13 @@ menu:
 # SubNav
 subnav:
   github: "https://github.com/BestDingSheng"
+<<<<<<< HEAD
   weibo: "https://juejin.im/timeline"
   zhihu: "https://www.zhihu.com/"
+=======
+  weibo: "#"
+  zhihu: "#"
+>>>>>>> d91bb7c23220559e6b55c0770726c7cf20effc06
   #qq: "#"
   # weixin: "#"
   jianshu: "http://www.jianshu.com/"
@@ -18,7 +23,11 @@ subnav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
+<<<<<<< HEAD
   #mail: "mailto:727040141@qq.com"
+=======
+  mail: "mailto:727040141@qq.com"
+>>>>>>> d91bb7c23220559e6b55c0770726c7cf20effc06
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -98,11 +107,18 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
+<<<<<<< HEAD
   掘金: https://juejin.im/welcome 
   vu2x: https://www.v2ex.com/
+=======
+>>>>>>> d91bb7c23220559e6b55c0770726c7cf20effc06
   vue中文网: https://cn.vuejs.org/v2/guide/
   myProject: https://github.com/BestDingSheng/Learn-and-Share
   Mac破解软件: http://xclient.info/
   CNode中文社区: https://cnodejs.org/  
+<<<<<<< HEAD
+=======
+  掘金: https://juejin.im/welcome 
+>>>>>>> d91bb7c23220559e6b55c0770726c7cf20effc06
 
 aboutme: 看得懂的，都不是命运。<br>说得清的，都不叫爱情。<br>忘得了的，都不是遗憾。<br>听得见的，都不是伤心。<br>躲得开的，都不是缘分。<br>猜得透的，都不叫人生。

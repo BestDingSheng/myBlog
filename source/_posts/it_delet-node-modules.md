@@ -1,7 +1,11 @@
 ---
 title: windows如何快速删除node_modules
 date: 2017-04-05 11:29:44
+<<<<<<< HEAD
 tags: [环境]
+=======
+tags: 技术
+>>>>>>> d91bb7c23220559e6b55c0770726c7cf20effc06
 ---
 > 之前用windows电脑做依赖node项目的时候总是会碰到删除node modules文件夹困难，下面教大家如何简单暴力快速的删除node_modules文件夹
 
