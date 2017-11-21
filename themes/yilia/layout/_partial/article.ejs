@@ -81,17 +81,26 @@
 <%- partial('post/share_addthis') %>
 <% } %>
 
-<% if (!index){ %>
-  <% if (theme.duoshuo && post.comments){ %>
-  <%- partial('post/duoshuo', {
-      key: post.slug,
-      title: post.title,
-      url: config.url+url_for(post.path)
-    }) %>
-  <% } else { %>
-    <div class="duoshuo"></div>
-  <% } %>
-<% } %>
+
+
+
+ <% if (!index){ %>
+   <% if (theme.duoshuo && post.comments){ %>
+   <%- partial('post/duoshuo', {
+       key: post.slug,
+        title: post.title,
+        url: config.url+url_for(post.path)
+      }) %>
+   <% } else if (theme.youyan_uid && post.comments){ %>
+   <%- partial('post/youyan', {
+     youyan_uid: theme.youyan_uid
+     }) %>
+    <% } else { %>
+      <div class="duoshuo"></div>
+    <% } %>
+ <% } %>
+
+
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
@@ -110,3 +119,15 @@
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
 <% } %>
+
+
+
+
+  <% if (theme.youyan){ %>
+     <!-- UY BEGIN -->
+     <div id="uyan_frame"></div>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=<%=theme.youyan%>"></script>
+     <!-- UY END -->
+   <% } %>
+
+

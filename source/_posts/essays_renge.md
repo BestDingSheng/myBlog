@@ -3,8 +3,6 @@ title: 鸡汤还是要喝的
 date: 2017-04-01 17:51:11
 tags: 随笔
 ---
-
-<<<<<<< HEAD
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 align='center' height=86 src="//music.163.com/outchain/player?type=2&id=29947420&auto=0&height=66"></iframe>
 =======
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 align='center' height=86 src="//music.163.com/outchain/player?type=2&id=29947420&auto=1&height=66"></iframe>

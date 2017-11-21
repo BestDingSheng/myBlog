@@ -1,0 +1,71 @@
+---
+title: react-router4.x 常用api
+date: 2017-10-16 14:31:20
+tags: [react]
+---
+
+
+**路由容器组件**
+
+* BrowserRouter: 浏览器自带的API，restful风格（需要后台做相应的调整）；
+* HashRouter: 使用hash方式进行路由；
+* MemoryRouter: 在内存中管理history，地址栏不会变化。在reactNative中使用。
+
+<!--more-->
+
+**Route标签**
+
+* 该标签有三种渲染方式component、render、children（绝大多数情况使用component组件就好了）；
+* 三种渲染方式都会得到三个属性match、history、location；
+* 渲染组件时，route props跟着一起渲染；
+* children方式渲染会不管地址栏是否匹配都渲染一些内容，在这里加动画一时很常见的做法。
+
+**Link标签**
+
+* to: 后面可以接字符串，也可以跟对象（对象可以是动态地添加搜索的信息）；
+* replace: 当设置为true时，点击链接后将使用新地址替换掉访问历史记录里面的原地址。
+
+**NavLink标签**
+
+* 是的一个特定版本, 会在匹配上当前URL的时候会给已经渲染的元素添加样式参数；
+* activeClassName，当地址匹配时添加相应class；
+* activeStyle，当地址匹配时添加相应style；
+* exact，当地址完全匹配时，才生效；
+* isActive，添加额外逻辑判断是否生效。
+
+**Prompt标签**
+
+* when: when的属性值为true时启用防止转换；
+* message: 后面可以跟简单的提示语，也可以跟函数，函数是有默认参数的。
+
+**Redirect标签**
+
+* 可以写在的render属性里面，也可以跟平级；
+* to: 依旧是可以跟字符串或对象；
+* push: 添加该属性时，地址不会被覆盖，而是添加一条新纪录；
+* from: 重定向，与平级时。
+
+**match**
+
+* params: 通过解析URL中动态的部分获得的键值对；
+* isExact: 当为true时，整个URL都需要匹配；
+* path: 在需要嵌套的时候用到；
+* url: 在需要嵌套的时候会用到；
+* 获取方式: 以this.props.match方式。
+
+
+```js
+import {
+  BrowserRouter as Router, // 或者是HashRouter、MemoryRouter
+  Route,   // 这是基本的路由块
+  Link,    // 这是a标签
+  Switch   // 这是监听空路由的
+  Redirect // 这是重定向
+  Prompt   // 防止转换  
+} from 'react-router-dom'
+```
+
+
+
+ 转载地址 https://yesixuan.github.io/2017/06/19/JS-reactRouter4/
+

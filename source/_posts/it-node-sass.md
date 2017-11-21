@@ -1,7 +1,7 @@
 ---
 title: node-sass的正确安装姿势
 date: 2017-04-11 09:26:38
-tags: [环境]
+tags: [node]
 ---
 > 安装 node-sass 的时候总是会各种不成功，今天我琢磨了一会儿总算知道要怎么解决了。
 > 首先要知道的是，安装 node-sass 时在 node scripts/install 阶段会从 github.com 上下载一个 .node 文件，大部分安装不成功的原因都源自这里，因为 GitHub Releases 里的文件都托管在 s3.amazonaws.com 上面，而这个网址在国内总是网络不稳定，所以我们需要通过第三方服务器下载这个文件。（顺带一提，你可以看看这个好玩的 commit）
