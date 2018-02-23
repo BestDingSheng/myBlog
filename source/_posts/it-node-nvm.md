@@ -11,6 +11,7 @@ tags: node
 https://segmentfault.com/a/1190000004404505
 http://bubkoo.com/2017/01/08/quick-tip-multiple-versions-node-nvm/
 
+<!--more-->
 
 ### 卸载全局安装的 node/npm
 
