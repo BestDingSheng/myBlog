@@ -9,11 +9,6 @@ Travis是什么？它是一个持续集成的工具
 文档 https://docs.travis-ci.com/user/getting-started/
 
 
-
-
-
-
-
 ### 参考资料
 
 https://segmentfault.com/a/1190000011218410

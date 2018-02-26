@@ -12,6 +12,8 @@ mobx是react的一种状态管理器
 下面是自己写的demo
 state.js
 
+<!-- more -->
+
 ```js
 import { observable, computed, action } from 'mobx'
 
