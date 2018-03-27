@@ -4,9 +4,9 @@
 
 # Site
 title: Deson‘s Blog
-subtitle: 生命不息,切图不止;
+subtitle: 以梦为马,越骑越傻;
 description: 丁盛的博客，记录生活点滴
-author: 丁盛的博客
+author: Deson
 language:
 timezone:
 
@@ -71,7 +71,7 @@ theme: yilia
 
 deploy:
   type: git
-  repo: https://github.com/BestDingSheng/myBlog.git
+  repo: git@github.com:BestDingSheng/myBlog.git
   branch: gh-pages
 
 
