@@ -164,19 +164,35 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-it-env-mysql" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-eslint-common-wenti" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/29/eslint-common-wenti/">eslint中常见的错误</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/29/eslint-common-wenti/" class="archive-article-date">
+  	<time datetime="2018-03-29T02:49:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: mysql常用命令<br>date: 2017-05-25 14:20:18</p>
-<h2 id="tags-环境-后台"><a href="#tags-环境-后台" class="headerlink" title="tags: [环境,后台]"></a>tags: [环境,后台]</h2><p>mysql如何使用 </p>
-<p>1 开机 mysql.server start  开机 </p>
-<p>2 登陆 mysql -uroot -p</p>
-        
-          <a class="article-more-a" href="/2018/03/28/it-env-mysql/#more">more >></a>
-        
+        <h3 id="总结eslint常见的错误"><a href="#总结eslint常见的错误" class="headerlink" title="总结eslint常见的错误"></a>总结eslint常见的错误</h3><ul>
+<li>message: ‘Missing semicolon. (semi)’  缺少分号</li>
+<li>queryUserTasks” is defined but never used (no-unused-vars)  这个变量从来没使用过</li>
+<li>Unexpected use of comma operator. (no-sequences) 不必要的分号</li>
+<li>Strings must use single quote. (quotes)  字符串必须使用单引号</li>
+<li>Unexpected var, use let or const instead. (no-var) var 换成 let</li>
+<li>[eslint] Newline required at end of file but not found. (eol-last) 文件最后有个空行</li>
+</ul>
+
       
 
       
@@ -184,11 +200,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/28/it-env-mysql/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/03/29/eslint-common-wenti/">展开全文 >></a>
         </p>
       
 
@@ -517,6 +544,7 @@
       
         <p>1 先看本地是否有ssh文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> <span class="built_in">cd</span> ~/.ssh</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> ls</span></span><br><span class="line">id_rsa          id_rsa.pub      known_hosts</span><br></pre></td></tr></table></figure>
+<p>没有的话生成公钥和私钥</p>
 <p>2 有则把公钥加到github</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="selector-tag">cat</span> <span class="selector-tag">id_rsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">ssh-rsa</span> <span class="selector-tag">AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ</span>... <span class="selector-tag">xxxx</span>@<span class="keyword">163</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
         
@@ -986,19 +1014,19 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1050,15 +1078,15 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mapping</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linxu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mapping</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1078,15 +1106,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">RN</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摄影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>

@@ -12,21 +12,21 @@
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1 先看本地是否有ssh文件 123&amp;gt; cd ~/.ssh&amp;gt; lsid_rsa          id_rsa.pub      known_hosts 2 有则把公钥加到github 12&amp;gt;cat id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ... xxxx@163.com">
+  <meta name="description" content="1 先看本地是否有ssh文件 123&amp;gt; cd ~/.ssh&amp;gt; lsid_rsa          id_rsa.pub      known_hosts 没有的话生成公钥和私钥 2 有则把公钥加到github 12&amp;gt;cat id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ... xxxx@163.com">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github ssh配置">
 <meta property="og:url" content="http://www.ding1996.cn/2018/03/14/it-github-ssh/index.html">
 <meta property="og:site_name" content="Deson‘s Blog">
-<meta property="og:description" content="1 先看本地是否有ssh文件 123&amp;gt; cd ~/.ssh&amp;gt; lsid_rsa          id_rsa.pub      known_hosts 2 有则把公钥加到github 12&amp;gt;cat id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ... xxxx@163.com">
+<meta property="og:description" content="1 先看本地是否有ssh文件 123&amp;gt; cd ~/.ssh&amp;gt; lsid_rsa          id_rsa.pub      known_hosts 没有的话生成公钥和私钥 2 有则把公钥加到github 12&amp;gt;cat id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ... xxxx@163.com">
 <meta property="og:image" content="http://our9i4zgx.bkt.clouddn.com/Snip20171220_3.png">
 <meta property="og:image" content="http://our9i4zgx.bkt.clouddn.com/Snip20171220_4.png">
 <meta property="og:image" content="http://our9i4zgx.bkt.clouddn.com/Snip20171220_5.png">
 <meta property="og:image" content="http://our9i4zgx.bkt.clouddn.com/blog/Snip20171226_12.png">
-<meta property="og:updated_time" content="2018-03-28T07:15:59.911Z">
+<meta property="og:updated_time" content="2018-03-28T08:57:06.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github ssh配置">
-<meta name="twitter:description" content="1 先看本地是否有ssh文件 123&amp;gt; cd ~/.ssh&amp;gt; lsid_rsa          id_rsa.pub      known_hosts 2 有则把公钥加到github 12&amp;gt;cat id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ... xxxx@163.com">
+<meta name="twitter:description" content="1 先看本地是否有ssh文件 123&amp;gt; cd ~/.ssh&amp;gt; lsid_rsa          id_rsa.pub      known_hosts 没有的话生成公钥和私钥 2 有则把公钥加到github 12&amp;gt;cat id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ... xxxx@163.com">
 <meta name="twitter:image" content="http://our9i4zgx.bkt.clouddn.com/Snip20171220_3.png">
   
     <link rel="alternative" href="/atom.xml" title="Deson‘s Blog" type="application/atom+xml">
@@ -191,6 +191,7 @@
       
         <p>1 先看本地是否有ssh文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash"> <span class="built_in">cd</span> ~/.ssh</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> ls</span></span><br><span class="line">id_rsa          id_rsa.pub      known_hosts</span><br></pre></td></tr></table></figure>
+<p>没有的话生成公钥和私钥</p>
 <p>2 有则把公钥加到github</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="selector-tag">cat</span> <span class="selector-tag">id_rsa</span><span class="selector-class">.pub</span></span><br><span class="line"><span class="selector-tag">ssh-rsa</span> <span class="selector-tag">AAAAB3NzaC1yc2EAAAADAQABAAABAQDVRgHi3gPdBcQ</span>... <span class="selector-tag">xxxx</span>@<span class="keyword">163</span>.<span class="keyword">com</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -504,19 +505,19 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -568,15 +569,15 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mapping</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linxu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mapping</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -596,15 +597,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">RN</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摄影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>
