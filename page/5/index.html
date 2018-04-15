@@ -164,6 +164,304 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-it-gongchenghua-parcel" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/28/it-gongchenghua-parcel/">下一代打包工具parcel</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/28/it-gongchenghua-parcel/" class="archive-article-date">
+  	<time datetime="2017-12-28T08:08:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>官网 <a href="https://parceljs.org/" target="_blank" rel="noopener">https://parceljs.org/</a></p>
+<p>vue项目parcel配置</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"vue-parcel"</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"1.0.0"</span>,</span><br><span class="line">  <span class="attr">"main"</span>: <span class="string">"index.js"</span>,</span><br><span class="line">  <span class="attr">"license"</span>: <span class="string">"MIT"</span>,</span><br><span class="line">  <span class="attr">"scripts"</span>: &#123;</span><br><span class="line">    <span class="attr">"dev"</span>: <span class="string">"parcel index.html"</span>,</span><br><span class="line">    <span class="attr">"build"</span>: <span class="string">"parcel build index.html --public-url /"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"devDependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"babel-preset-env"</span>: <span class="string">"^1.6.1"</span>,</span><br><span class="line">    <span class="attr">"less"</span>: <span class="string">"^2.7.3"</span>,</span><br><span class="line">    <span class="attr">"node-sass"</span>: <span class="string">"^4.7.2"</span>,</span><br><span class="line">    <span class="attr">"parcel-bundler"</span>: <span class="string">"^1.2.0"</span>,</span><br><span class="line">    <span class="attr">"parcel-plugin-vue"</span>: <span class="string">"^1.0.1"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"echarts"</span>: <span class="string">"^3.8.5"</span>,</span><br><span class="line">    <span class="attr">"vue-router"</span>: <span class="string">"^3.0.1"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">parcel</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/28/it-gongchenghua-parcel/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-it-js-1221" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/21/it-js-1221/">js连等赋值面试题的思考思路</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/21/it-js-1221/" class="archive-article-date">
+  	<time datetime="2017-12-21T01:52:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>昨晚看到了一道js的连等赋值的题目思考了很久一直没有解决，今天茅塞顿开貌似懂了点什么；</p>
+<p>先来看段代码</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123;<span class="attr">n</span>:<span class="number">1</span>&#125;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">a = &#123;<span class="attr">n</span>:<span class="number">2</span>&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="built_in">console</span>.log(b);</span><br></pre></td></tr></table></figure>
+<p>第一个log输出 {n:2}<br>第二个log输出 {n:1}<br>上面这段代码看懂了 我们在来看下面这个段代码<br>
+        
+          <a class="article-more-a" href="/2017/12/21/it-js-1221/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/21/it-js-1221/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-it-shuxue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/14/it-shuxue/">数学复习</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/14/it-shuxue/" class="archive-article-date">
+  	<time datetime="2017-12-14T07:55:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>三角函数<a href="https://wenku.baidu.com/view/4024c002e87101f69e319562.html?from=search" target="_blank" rel="noopener">https://wenku.baidu.com/view/4024c002e87101f69e319562.html?from=search</a></p>
+<p>圆的面积<br>S=πr² r=半径<br>周长计算公式<br>2πr</p>
+<p>弧长的计算公式<br>L = nπr/180   n=角度  r=半径</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/14/it-shuxue/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-it-mianshi-youhua" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/14/it-mianshi-youhua/">前端性能优化</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/14/it-mianshi-youhua/" class="archive-article-date">
+  	<time datetime="2017-12-14T02:51:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这些规则呢主要是来自《高性能网站建设指南》这本书，然后雅虎军规加以补充。</p>
+<h4 id="减少http请求"><a href="#减少http请求" class="headerlink" title="减少http请求"></a>减少http请求</h4><p>学过计算机网络的同学应该都知道，http请求需要进行三次握手，这是很费时间的。通过查看流量也可以发现，大部分的时间都花在了为html文档所引用的所有组件进行的http请求上。因此减少http请求可以提高网站性能。</p>
+<h4 id="图片地图"><a href="#图片地图" class="headerlink" title="图片地图"></a>图片地图</h4><p>这个我实际用的比较少，就是在一个图片上关联多个url。<br>
+        
+          <a class="article-more-a" href="/2017/12/14/it-mianshi-youhua/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/14/it-mianshi-youhua/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
     <article id="post-it-mianshi-html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -695,325 +993,6 @@
 
 
   
-    <article id="post-it-js-offsetLeft" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/05/it-js-offsetLeft/">offsetLeft,Left,clientLeft的区别</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/05/it-js-offsetLeft/" class="archive-article-date">
-  	<time datetime="2017-12-05T02:17:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>原文 offsetLeft,Left,clientLeft的区别<br><a href="https://www.cnblogs.com/panjun-Donet/articles/1294033.html" target="_blank" rel="noopener">https://www.cnblogs.com/panjun-Donet/articles/1294033.html</a></p>
-<p><img src="https://images.cnblogs.com/cnblogs_com/panjun-donet/dhtmopos.gif" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/05/it-js-offsetLeft/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-    <article id="post-20171201" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/01/20171201/">情商学习笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/01/20171201/" class="archive-article-date">
-  	<time datetime="2017-12-01T03:04:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>毕业了已经不再是小孩子了，在职场也好在外面认识朋友也好避免不了与人接触,会不会为人处世就是体验情商的时候</p>
-</blockquote>
-<p>自认为自己情商比较低和别人处关系经常容易做吃力不讨好的事情所以想好好提升下自己的情商。我在蜻蜓FM上面买了个老梁的四大名著讲情商这里是我总结的一些点。</p>
-        
-          <a class="article-more-a" href="/2017/12/01/20171201/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/01/20171201/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-    <article id="post-it-php-biji01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/30/it-php-biji01/">php学习笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/30/it-php-biji01/" class="archive-article-date">
-  	<time datetime="2017-11-30T01:32:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="php基础语法"><a href="#php基础语法" class="headerlink" title="php基础语法"></a>php基础语法</h3><p>php需要写在&lt;?php ?&gt;环境里</p>
-<p>定义变量 $a = ‘a’;</p>
-<p>isset()方法判断这个变量是否存在</p>
-<p>echo ‘a’  打印方法</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$a = <span class="string">'hah'</span>;</span><br><span class="line">   <span class="comment">// 函数内部拿不到 外面的变量需要添加 global 才能拿到</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ding</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">global</span> $a;</span><br><span class="line">	<span class="keyword">echo</span> $a;</span><br><span class="line">&#125;</span><br><span class="line"> ding()</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/11/30/it-php-biji01/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/30/it-php-biji01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-    <article id="post-it-linux-scp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/22/it-linux-scp/">Liunx文件传输Scp命令使用</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/22/it-linux-scp/" class="archive-article-date">
-  	<time datetime="2017-11-22T02:50:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p> linux上面本地和服务器如何进行文件传输—scp<br>linux 的 scp 命令 可以 在 linux 之间复制 文件 和 目录； </p>
-</blockquote>
-<h3 id="文件上传几种方式"><a href="#文件上传几种方式" class="headerlink" title="文件上传几种方式"></a>文件上传几种方式</h3><ul>
-<li>scp local_file remote_username@remote_ip:remote_folder </li>
-<li>scp local_file remote_username@remote_ip:remote_file </li>
-<li>scp local_file remote_ip:remote_folder </li>
-<li>scp local_file remote_ip:remote_file </li>
-</ul>
-<p>列子<br>
-        
-          <a class="article-more-a" href="/2017/11/22/it-linux-scp/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/22/it-linux-scp/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/6/">Next &raquo;</a>
@@ -1140,11 +1119,19 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">http</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">http</a>
+                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1153,10 +1140,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">node</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1172,11 +1155,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1216,11 +1199,15 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1229,10 +1216,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摄影</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>
