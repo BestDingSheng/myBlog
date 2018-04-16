@@ -14,6 +14,8 @@ id_rsa          id_rsa.pub      known_hosts
 
 ```
 
+没有的话生成公钥和私钥
+
 
 2 有则把公钥加到github
 
@@ -70,5 +72,3 @@ Hi youcanping! You've successfully authenticated, but GitHub does not provide sh
 > ssh-add ~/.ssh/id_rsa
 > Identity added: /Users/youcanping/.ssh/id_rsa (/Users/youcanping/.ssh/id_rsa)
 ```
-
-
