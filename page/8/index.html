@@ -164,6 +164,176 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-it-linux-install-mysql" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/16/it-linux-install-mysql/">CentOS 7 用 yum 安装 Mysql</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/16/it-linux-install-mysql/" class="archive-article-date">
+  	<time datetime="2017-09-16T06:20:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Step1: 检测系统是否自带安装mysql</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> yum list installed | grep mysql</span></span><br></pre></td></tr></table></figure>
+<p>Step2: 删除系统自带的mysql及其依赖<br>命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> yum -y remove mysql-libs.x86_64</span></span><br></pre></td></tr></table></figure>
+<p>Step3: 给CentOS添加rpm源，并且选择较新的源<br>命令：</p>
+        
+          <a class="article-more-a" href="/2017/09/16/it-linux-install-mysql/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后台</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/16/it-linux-install-mysql/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-it-linux-install-ngix" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/15/it-linux-install-ngix/">CentOS 7 用 yum 安装 Nginx</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/15/it-linux-install-ngix/" class="archive-article-date">
+  	<time datetime="2017-09-15T06:20:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在 CentOS 7 中，直接使用 yum 安装 Nignx 会提示无下载源。因此，需要添加 Nginx 的下载源到 yum：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -Uvh http:<span class="regexp">//</span>nginx.org<span class="regexp">/packages/</span>centos<span class="regexp">/7/</span>noarch<span class="regexp">/RPMS/</span>nginx-release-centos-<span class="number">7</span>-<span class="number">0</span>.el7.ngx.noarch.rpm</span><br></pre></td></tr></table></figure>
+<p>指定了下载源后，就可以使用 yum 命令来安装 Nginx 了：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum <span class="keyword">install</span> -y nginx</span><br></pre></td></tr></table></figure>
+<p>安装完成的 Nginx 并不会立刻启动，需要我们手动执行命令来开启它:</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="literal">start</span> nginx.service</span><br></pre></td></tr></table></figure>
+<p>还可以输入以下命令，让 Nginx 可以随系统自动启动：</p>
+        
+          <a class="article-more-a" href="/2017/09/15/it-linux-install-ngix/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后台</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/15/it-linux-install-ngix/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
     <article id="post-it-axios-fengzhuang" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -506,85 +676,6 @@
 
 
   
-    <article id="post-it-vue-importjs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/06/it-vue-importjs/">Vue框架引入JS库的正确姿势</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/06/it-vue-importjs/" class="archive-article-date">
-  	<time datetime="2017-09-06T01:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>关于本文：</p>
-<p><a href="http://vuejsdevelopers.com/2017/04/22/vue-js-libraries-plugins/?jsdojo_id=reddit_lip&amp;utm_content=bufferf1f60&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer" target="_blank" rel="noopener">原文地址</a>   <a href="https://github.com/fezaoduke/TranslationInstitute/blob/master/Vue%E6%A1%86%E6%9E%B6%E5%BC%95%E5%85%A5JS%E5%BA%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF.md" target="_blank" rel="noopener">翻译地址</a>   译者：野草</p>
-<p>在Vue.js应用中，可能需要引入Lodash，Moment，Axios，Async等非常好用的JavaScript库。当项目变得复杂庞大，通常会将代码进行模块化拆分。可能还需要跑在不同的环境下，比如浏览器，服务端。</p>
-<p>如何在各个模块和组件文件中引入需要的库呢？ 找到一种简单靠谱的方式，可以省去很多的麻烦。</p>
-        
-          <a class="article-more-a" href="/2017/09/06/it-vue-importjs/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/06/it-vue-importjs/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
     <article id="post-it-cookies-sesstions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -660,6 +751,85 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/09/06/it-cookies-sesstions/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-it-vue-importjs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/06/it-vue-importjs/">Vue框架引入JS库的正确姿势</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/06/it-vue-importjs/" class="archive-article-date">
+  	<time datetime="2017-09-06T01:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>关于本文：</p>
+<p><a href="http://vuejsdevelopers.com/2017/04/22/vue-js-libraries-plugins/?jsdojo_id=reddit_lip&amp;utm_content=bufferf1f60&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer" target="_blank" rel="noopener">原文地址</a>   <a href="https://github.com/fezaoduke/TranslationInstitute/blob/master/Vue%E6%A1%86%E6%9E%B6%E5%BC%95%E5%85%A5JS%E5%BA%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF.md" target="_blank" rel="noopener">翻译地址</a>   译者：野草</p>
+<p>在Vue.js应用中，可能需要引入Lodash，Moment，Axios，Async等非常好用的JavaScript库。当项目变得复杂庞大，通常会将代码进行模块化拆分。可能还需要跑在不同的环境下，比如浏览器，服务端。</p>
+<p>如何在各个模块和组件文件中引入需要的库呢？ 找到一种简单靠谱的方式，可以省去很多的麻烦。</p>
+        
+          <a class="article-more-a" href="/2017/09/06/it-vue-importjs/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/06/it-vue-importjs/">展开全文 >></a>
         </p>
       
 
@@ -853,179 +1023,6 @@
 
 
   
-    <article id="post-it-mongodb" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/25/it-mongodb/">mongodb使用</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/25/it-mongodb/" class="archive-article-date">
-  	<time datetime="2017-08-25T01:49:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>官网 <a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a><br>手册 <a href="https://docs.mongodb.org/manual/" target="_blank" rel="noopener">https://docs.mongodb.org/manual/</a></p>
-<p>mac 安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install mongodb</span><br></pre></td></tr></table></figure>
-<h3 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mongod --dbpath path #开机</span><br><span class="line">mongo #使用</span><br><span class="line">mongoimport #导入</span><br></pre></td></tr></table></figure>
-<h3 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h3><ul>
-<li>show dbs // 列出所有数据库</li>
-<li>use 数据库名字 // 使用数据库 没有就自动新建</li>
-<li>db 查看当前所在数据库</li>
-<li>db.student.insert({‘namae’:’dingsheng’}) // 插入数据 没有student 这个集合就自动新建</li>
-<li>show collections // 查看数据库集合</li>
-<li>db.dropDatabase() // 删除当前所在数据库 </li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后台</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/25/it-mongodb/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-    <article id="post-it-vue-annotation" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/17/it-vue-annotation/">vscode插件</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/17/it-vue-annotation/" class="archive-article-date">
-  	<time datetime="2017-08-17T02:46:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>好的开发工具能大大提升开发效率，目前我在用的是vscode 这里推荐些我目前常用的插件</p>
-</blockquote>
-<ol>
-<li>Beautify 代码格式化工具</li>
-<li>Spacgray VSCode 主题</li>
-<li>Vetur vue代码高亮格式化插件</li>
-<li>vue 提示vue语法</li>
-</ol>
-        
-          <a class="article-more-a" href="/2017/08/17/it-vue-annotation/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编辑器</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/17/it-vue-annotation/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
@@ -1156,11 +1153,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
+                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1168,11 +1165,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mac</a>
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">node</a>
+                <a href="javascript:void(0)" class="js-tag color4">mac</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1189,10 +1186,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1228,15 +1221,19 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
+                <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
+                <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
               </li>
              
               <li class="article-tag-list-item">
