@@ -164,58 +164,33 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-it-cookies-sesstions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-it-vue-bus" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/06/it-cookies-sesstions/">Express中cookie使用</a>
+      <a class="article-title" href="/2017/09/06/it-vue-bus/">Vue非父子组件通信方法</a>
     </h1>
   
 
         
-        <a href="/2017/09/06/it-cookies-sesstions/" class="archive-article-date">
-  	<time datetime="2017-09-06T01:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
+        <a href="/2017/09/06/it-vue-bus/" class="archive-article-date">
+  	<time datetime="2017-09-06T11:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>cookie 和 session 是我们在开发中经常用到的 你真的了解吗？</p>
-<table>
-<thead>
-<tr>
-<th>区别</th>
-<th>cookie</th>
-<th>session</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>大小</td>
-<td>4k</td>
-<td>无限</td>
-</tr>
-<tr>
-<td>储存位置</td>
-<td>浏览器</td>
-<td>服务器</td>
-</tr>
-<tr>
-<td>安全级别</td>
-<td>不安全</td>
-<td>安全</td>
-</tr>
-</tbody>
-</table>
-<p>服务端如何向浏览器发送cookie，以express为例<br><a href="http://www.expressjs.com.cn/4x/api.html#res.cookie" target="_blank" rel="noopener">发送cookie</a></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app = express();</span><br><span class="line">app.get(<span class="string">'/'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">    res.cookie(<span class="string">'name'</span>:<span class="string">'dingsheng'</span>)  <span class="comment">// 发送cookie</span></span><br><span class="line">   <span class="comment">//  如需要添加参数 请查看官网文档    </span></span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p><strong>那么如何读取呢</strong><br>读取cookie需要用到 中间件cookie-parser<br>首先需要去安装 npm install cookie-parser<br><a href="http://www.expressjs.com.cn/4x/api.html#req.cookies" target="_blank" rel="noopener">获取cookie</a></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> cookieParser = <span class="built_in">require</span>(<span class="string">'cookie-parser'</span>)</span><br><span class="line"><span class="keyword">let</span> app = express();</span><br><span class="line">app.use(cookieParser())</span><br><span class="line">app.listen(<span class="number">9090</span>);</span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">  <span class="comment">//  获取cookies  需要使用 var cookieParser = require('cookie-parser')</span></span><br><span class="line">  <span class="built_in">console</span>.log(req.cookies);</span><br><span class="line">  res.send(req.cookies);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
+        <blockquote>
+<p>一提到两个非父子组件通信方法，有经验的 coder 肯定会说用 Vuex 啊，我个人建议不要为了用 Vuex 而用 Vuex，除非你的项目很大，耦合度很高，需要大量的储存一些 data，组件之间通信频繁。当然还是要根据自己的业务场景的来决定，总之还是那句话，不要为了用 Vuex 而用 Vuex！</p>
+</blockquote>
+<p> Vue 官网介绍了非父子组件通信方法：<br> <img src="http://upload-images.jianshu.io/upload_images/1430985-11f7e296be088d3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600" alt=""><br> 不过官网说的太简单了，新手看完估计还是一脸懵逼。还有这个空的 Vue 实例放到哪里合适也值得商榷。</p>
+        
+          <a class="article-more-a" href="/2017/09/06/it-vue-bus/#more">more >></a>
+        
       
 
       
@@ -228,7 +203,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
         		</li>
       		
 		</ul>
@@ -238,7 +213,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/06/it-cookies-sesstions/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/09/06/it-vue-bus/">展开全文 >></a>
         </p>
       
 
@@ -318,6 +293,110 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/09/06/it-vue-importjs/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-it-cookies-sesstions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/06/it-cookies-sesstions/">Express中cookie使用</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/06/it-cookies-sesstions/" class="archive-article-date">
+  	<time datetime="2017-09-06T01:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>cookie 和 session 是我们在开发中经常用到的 你真的了解吗？</p>
+<table>
+<thead>
+<tr>
+<th>区别</th>
+<th>cookie</th>
+<th>session</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大小</td>
+<td>4k</td>
+<td>无限</td>
+</tr>
+<tr>
+<td>储存位置</td>
+<td>浏览器</td>
+<td>服务器</td>
+</tr>
+<tr>
+<td>安全级别</td>
+<td>不安全</td>
+<td>安全</td>
+</tr>
+</tbody>
+</table>
+<p>服务端如何向浏览器发送cookie，以express为例<br><a href="http://www.expressjs.com.cn/4x/api.html#res.cookie" target="_blank" rel="noopener">发送cookie</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app = express();</span><br><span class="line">app.get(<span class="string">'/'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">    res.cookie(<span class="string">'name'</span>:<span class="string">'dingsheng'</span>)  <span class="comment">// 发送cookie</span></span><br><span class="line">   <span class="comment">//  如需要添加参数 请查看官网文档    </span></span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p><strong>那么如何读取呢</strong><br>读取cookie需要用到 中间件cookie-parser<br>首先需要去安装 npm install cookie-parser<br><a href="http://www.expressjs.com.cn/4x/api.html#req.cookies" target="_blank" rel="noopener">获取cookie</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> cookieParser = <span class="built_in">require</span>(<span class="string">'cookie-parser'</span>)</span><br><span class="line"><span class="keyword">let</span> app = express();</span><br><span class="line">app.use(cookieParser())</span><br><span class="line">app.listen(<span class="number">9090</span>);</span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">  <span class="comment">//  获取cookies  需要使用 var cookieParser = require('cookie-parser')</span></span><br><span class="line">  <span class="built_in">console</span>.log(req.cookies);</span><br><span class="line">  res.send(req.cookies);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/06/it-cookies-sesstions/">展开全文 >></a>
         </p>
       
 
@@ -915,82 +994,6 @@
 
 
   
-    <article id="post-it-audio-api" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/01/it-audio-api/">HTML5&lt;Audio标签API整理&gt;</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/01/it-audio-api/" class="archive-article-date">
-  	<time datetime="2017-08-01T02:21:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="只读属性"><a href="#只读属性" class="headerlink" title="只读属性"></a>只读属性</h3><p>duration —获取媒体文件的播放时长，以s为单位，如果无法获取则为NaN，当触发canplay事件后就可以获取当前总长度<br>startTime—返回起始播放时间，一般是0.0,除非是缓冲过的媒体文件，并一部分内容已经不再缓冲区(此属性好像已经不可用)<br>paused—–判断是否已经暂停，返回true/false<br>ended—–判断是否已经播放完毕，返回true/false<br>error—-在发生了错误后，返回错误代码<br>currentSrc –以字符串的形式发挥正在播放或已经加载的文件，对应浏览器在source元素中选择的文件<br>buffered—获取当前缓冲区大小，返回TimeRanges对象，点击更多参考</p>
-        
-          <a class="article-more-a" href="/2017/08/01/it-audio-api/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/01/it-audio-api/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/8/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/10/">Next &raquo;</a>
@@ -1105,6 +1108,14 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">游记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
@@ -1113,15 +1124,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游记</a>
+                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1133,15 +1140,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1153,11 +1156,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1165,7 +1164,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1173,7 +1176,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mapping</a>
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1185,11 +1188,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面试</a>
+                <a href="javascript:void(0)" class="js-tag color3">mapping</a>
               </li>
              
               <li class="article-tag-list-item">
