@@ -6,23 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.ding1996.cn">
-  <title>2017-8-11 随笔 | Deson‘s Blog</title>
+  <title>github每天自动commit脚本 | Deson‘s Blog</title>
 
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="发现这几年前端的要求以及从业人员明显大幅度提升记得15年刚工作的时候会个html css 会做简单的静态页面就能找到一份工作，然饿就一两年的时间前端发生了翻天覆地的变化从刚工作会jquery就能开发大项目到现在 前端三大框架 Angular Vue React, 以及每个框架的技术栈 经过时间的洗礼 明显angular的用户数量慢慢的被vue 和 react 抢去了不少 ！ 由于vue上手容易今年">
-<meta name="keywords" content="随笔">
+  <meta name="description" content="参考 https://github.com/tywei90/git-auto-commit centos7 时间同步https://www.cnblogs.com/lei0213/p/8723106.htmlhttps://blog.csdn.net/sunweijm/article/details/78051230 yes 开启 no 关闭timedatectl set-ntp notimeda">
+<meta name="keywords" content="git,github">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017-8-11 随笔">
-<meta property="og:url" content="http://www.ding1996.cn/2017/08/11/17-08-11/index.html">
+<meta property="og:title" content="github每天自动commit脚本">
+<meta property="og:url" content="http://www.ding1996.cn/2019/02/25/git-auto-commit/index.html">
 <meta property="og:site_name" content="Deson‘s Blog">
-<meta property="og:description" content="发现这几年前端的要求以及从业人员明显大幅度提升记得15年刚工作的时候会个html css 会做简单的静态页面就能找到一份工作，然饿就一两年的时间前端发生了翻天覆地的变化从刚工作会jquery就能开发大项目到现在 前端三大框架 Angular Vue React, 以及每个框架的技术栈 经过时间的洗礼 明显angular的用户数量慢慢的被vue 和 react 抢去了不少 ！ 由于vue上手容易今年">
-<meta property="og:updated_time" content="2018-03-28T07:15:59.901Z">
+<meta property="og:description" content="参考 https://github.com/tywei90/git-auto-commit centos7 时间同步https://www.cnblogs.com/lei0213/p/8723106.htmlhttps://blog.csdn.net/sunweijm/article/details/78051230 yes 开启 no 关闭timedatectl set-ntp notimeda">
+<meta property="og:updated_time" content="2019-02-25T03:42:44.557Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017-8-11 随笔">
-<meta name="twitter:description" content="发现这几年前端的要求以及从业人员明显大幅度提升记得15年刚工作的时候会个html css 会做简单的静态页面就能找到一份工作，然饿就一两年的时间前端发生了翻天覆地的变化从刚工作会jquery就能开发大项目到现在 前端三大框架 Angular Vue React, 以及每个框架的技术栈 经过时间的洗礼 明显angular的用户数量慢慢的被vue 和 react 抢去了不少 ！ 由于vue上手容易今年">
+<meta name="twitter:title" content="github每天自动commit脚本">
+<meta name="twitter:description" content="参考 https://github.com/tywei90/git-auto-commit centos7 时间同步https://www.cnblogs.com/lei0213/p/8723106.htmlhttps://blog.csdn.net/sunweijm/article/details/78051230 yes 开启 no 关闭timedatectl set-ntp notimeda">
   
     <link rel="alternative" href="/atom.xml" title="Deson‘s Blog" type="application/atom+xml">
   
@@ -54,13 +54,13 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/uploads/touxiang.png" class="js-avatar">
+			<img src="/uploads/touxiang3.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Deson</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">以梦为马,越骑越傻;</p>
+		<p class="header-subtitle">不忘初心,厚积薄发;</p>
 		
 
 		<nav class="header-menu">
@@ -115,13 +115,13 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/uploads/touxiang.png" class="js-avatar">
+				<img src="/uploads/touxiang3.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Deson</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>以梦为马,越骑越傻;<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>不忘初心,厚积薄发;<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -164,37 +164,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-17-08-11" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-git-auto-commit" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      2017-8-11 随笔
+      github每天自动commit脚本
     </h1>
   
 
         
-        <a href="/2017/08/11/17-08-11/" class="archive-article-date">
-  	<time datetime="2017-08-11T07:16:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-11</time>
+        <a href="/2019/02/25/git-auto-commit/" class="archive-article-date">
+  	<time datetime="2019-02-25T03:39:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>发现这几年前端的要求以及从业人员明显大幅度提升记得15年刚工作的时候会个html css 会做简单的静态页面就能找到一份工作，然饿就一两年的时间前端发生了翻天覆地的变化从刚工作会jquery就能开发大项目到现在 前端三大框架 Angular Vue React, 以及每个框架的技术栈 经过时间的洗礼 明显angular的用户数量慢慢的被vue 和 react 抢去了不少 ！ 由于vue上手容易今年开始学习了vue 接触了 vue技术栈发现这些新的框架确实比jquery好用 以前些项目都是操作DOM 绑定事件 拼字符串 去渲染页面 用了vue是数据驱动的 写好模板直接通过指令去循环 只要操作数据就行了 工作效率已经代码可维护性明显提高~</p>
-<a id="more"></a>
-<p>公司项目不是很忙，多出来的时间想学点东西,vue感觉了解的差不多了想学nodejs做全栈又想学Python又想学数据分析~听同学说现在AI是未来趋势又想去AI 结果时间一天天的过去貌似什么都没学会就是简单的了解了下，在上海这大都市生活压力挺大 感觉每天都是在混日子没有成长很快就会被淘汰轻易的就能被别人取代~ </p>
-<p>想想每个月还要还房贷，身体内的那懒洋洋的灵魂又被生活的压力打败，最近比较浮躁决定静下心来，之前每次说去学习却一直没有定个明确的目标所以就和无头苍蝇一样撞来撞去各种碰壁~ 最近看了看前端的招聘要求发现外面大多公司都在用React框架决定近期好好的把React学习下</p>
-<h3 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h3><ul>
-<li>学习基础语法</li>
-<li>学习api</li>
-<li>动手实践去习惯React</li>
-<li>做个简单的豆瓣电影项目</li>
-</ul>
-<p>语言组织能力不是很强，以后还是要多多总结复盘来提升自己的写作编码能力~</p>
+        <p>参考 <a href="https://github.com/tywei90/git-auto-commit" target="_blank" rel="noopener">https://github.com/tywei90/git-auto-commit</a></p>
+<h3 id="centos7-时间同步"><a href="#centos7-时间同步" class="headerlink" title="centos7 时间同步"></a>centos7 时间同步</h3><p><a href="https://www.cnblogs.com/lei0213/p/8723106.html" target="_blank" rel="noopener">https://www.cnblogs.com/lei0213/p/8723106.html</a><br><a href="https://blog.csdn.net/sunweijm/article/details/78051230" target="_blank" rel="noopener">https://blog.csdn.net/sunweijm/article/details/78051230</a></p>
+<p>yes 开启 no 关闭<br>timedatectl set-ntp no<br>timedatectl set-ntp yes</p>
+<h3 id="linux-命令"><a href="#linux-命令" class="headerlink" title="linux 命令"></a>linux 命令</h3><p>date 查看当前日期<br>timedatectl 查看系统日期</p>
+<h3 id="linux-自动发送邮件"><a href="#linux-自动发送邮件" class="headerlink" title="linux 自动发送邮件"></a>linux 自动发送邮件</h3><p><a href="https://www.cnblogs.com/imweihao/p/7250500.html" target="_blank" rel="noopener">https://www.cnblogs.com/imweihao/p/7250500.html</a></p>
 
       
 
@@ -239,7 +233,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
         		</li>
       		
 		</ul>
@@ -295,7 +293,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://www.ding1996.cn/2017/08/11/17-08-11/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.ding1996.cn/2019/02/25/git-auto-commit/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,18 +307,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/08/14/17-08-14/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          17-08-14 随笔
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/08/07/it-tree-shiyong/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Mac使用tree生成目录结构</div>
+    <a href="/2019/02/25/react-components-02/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">react组件开发规范</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -335,7 +324,7 @@
 
  
    
-   <div id="SOHUCS" sid="2017-8-11 随笔" style="padding: 0px 30px 0px 46px;"></div>
+   <div id="SOHUCS" sid="github每天自动commit脚本" style="padding: 0px 30px 0px 46px;"></div>
 <script>
 (function () {
     var appid = 'cyt1TF0Wb';  //你的appid
@@ -402,7 +391,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Deson
+    		&copy; 2019 Deson
     	</div>
 
       <div class='footer-left' style='margin-left:20px;color:#08c;'>
@@ -500,11 +489,23 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">ci</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -516,7 +517,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mac</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -524,11 +529,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mac</a>
+                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -544,11 +545,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -556,7 +553,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -564,7 +561,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -576,15 +573,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linxu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -592,19 +585,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ci</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -617,6 +598,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摄影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>

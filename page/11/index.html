@@ -52,13 +52,13 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/uploads/touxiang.png" class="js-avatar">
+			<img src="/uploads/touxiang3.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Deson</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">以梦为马,越骑越傻;</p>
+		<p class="header-subtitle">不忘初心,厚积薄发;</p>
 		
 
 		<nav class="header-menu">
@@ -113,13 +113,13 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/uploads/touxiang.png" class="js-avatar">
+				<img src="/uploads/touxiang3.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Deson</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>以梦为马,越骑越傻;<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>不忘初心,厚积薄发;<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -164,29 +164,202 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-17-08-11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-it-mongodb" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/11/17-08-11/">2017-8-11 随笔</a>
+      <a class="article-title" href="/2017/08/25/it-mongodb/">mongodb使用</a>
     </h1>
   
 
         
-        <a href="/2017/08/11/17-08-11/" class="archive-article-date">
-  	<time datetime="2017-08-11T07:16:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-11</time>
+        <a href="/2017/08/25/it-mongodb/" class="archive-article-date">
+  	<time datetime="2017-08-25T01:49:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>发现这几年前端的要求以及从业人员明显大幅度提升记得15年刚工作的时候会个html css 会做简单的静态页面就能找到一份工作，然饿就一两年的时间前端发生了翻天覆地的变化从刚工作会jquery就能开发大项目到现在 前端三大框架 Angular Vue React, 以及每个框架的技术栈 经过时间的洗礼 明显angular的用户数量慢慢的被vue 和 react 抢去了不少 ！ 由于vue上手容易今年开始学习了vue 接触了 vue技术栈发现这些新的框架确实比jquery好用 以前些项目都是操作DOM 绑定事件 拼字符串 去渲染页面 用了vue是数据驱动的 写好模板直接通过指令去循环 只要操作数据就行了 工作效率已经代码可维护性明显提高~</p>
+        <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>官网 <a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a><br>手册 <a href="https://docs.mongodb.org/manual/" target="_blank" rel="noopener">https://docs.mongodb.org/manual/</a></p>
+<p>mac 安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install mongodb</span><br></pre></td></tr></table></figure>
+<h3 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mongod --dbpath path #开机</span><br><span class="line">mongo #使用</span><br><span class="line">mongoimport #导入</span><br></pre></td></tr></table></figure>
+<h3 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h3><ul>
+<li>show dbs // 列出所有数据库</li>
+<li>use 数据库名字 // 使用数据库 没有就自动新建</li>
+<li>db 查看当前所在数据库</li>
+<li>db.student.insert({‘namae’:’dingsheng’}) // 插入数据 没有student 这个集合就自动新建</li>
+<li>show collections // 查看数据库集合</li>
+<li>db.dropDatabase() // 删除当前所在数据库 </li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后台</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/25/it-mongodb/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-it-vue-annotation" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
         
-          <a class="article-more-a" href="/2017/08/11/17-08-11/#more">more >></a>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/17/it-vue-annotation/">vscode插件</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/17/it-vue-annotation/" class="archive-article-date">
+  	<time datetime="2017-08-17T02:46:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>好的开发工具能大大提升开发效率，目前我在用的是vscode 这里推荐些我目前常用的插件</p>
+</blockquote>
+<ol>
+<li>Beautify 代码格式化工具</li>
+<li>Spacgray VSCode 主题</li>
+<li>Vetur vue代码高亮格式化插件</li>
+<li>vue 提示vue语法</li>
+</ol>
+        
+          <a class="article-more-a" href="/2017/08/17/it-vue-annotation/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编辑器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/17/it-vue-annotation/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    <article id="post-17-08-14" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/14/17-08-14/">17-08-14 随笔</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/14/17-08-14/" class="archive-article-date">
+  	<time datetime="2017-08-14T01:28:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1 周末两天匆匆的过去了，今天又到了周一新的一周开始了~放假两天在家宅了两天看看电影睡睡懒觉玩玩游戏，时间用在最多的也就是游戏了—王者荣耀 。虽然我知道玩游戏很不好 浪费时间 挥霍生命 但是却还一直在玩为什么呢？因为我也有个王者梦，在周末两天的努力下终于把段位打到至尊星耀 虽然离王者还有一小段的距离大但是我已经满足了，准备卸载游戏让这个排名在游戏中闪耀。</p>
+        
+          <a class="article-more-a" href="/2017/08/14/17-08-14/#more">more >></a>
         
       
 
@@ -210,7 +383,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/11/17-08-11/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/08/14/17-08-14/">展开全文 >></a>
         </p>
       
 
@@ -790,171 +963,6 @@
 
 
   
-    <article id="post-it-linux-zhiling" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/06/it-linux-zhiling/">linux常用命令</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/06/it-linux-zhiling/" class="archive-article-date">
-  	<time datetime="2017-07-06T01:45:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h3><p>ls　　        显示文件或目录<br>     -l           列出文件详细信息l(list)<br>     -a          列出当前目录下所有文件及目录，包括隐藏的a(all)</p>
-<p>mkdir         创建目录<br>     -p           创建目录，若无父目录，则创建p(parent)</p>
-<p>cd               切换目录</p>
-<p>touch          创建空文件</p>
-<p>echo            创建带有内容的文件。</p>
-<p>cat              查看文件内容</p>
-        
-          <a class="article-more-a" href="/2017/07/06/it-linux-zhiling/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">mac</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/06/it-linux-zhiling/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-    <article id="post-it-github-learn" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/30/it-github-learn/">如何高效利用github提升自己</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/30/it-github-learn/" class="archive-article-date">
-  	<time datetime="2017-06-30T01:22:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户，是开发者打开程序开源大门的一扇窗口，也是开发者快速提升自己的一个重要途径。本文将从两个方面介绍github的使用方式。</p>
-</blockquote>
-<p><strong>和逛微博、朋友圈、空间一样逛github</strong></p>
-<p>你在空闲时间逛微博、朋友圈、空间，人家没事的时候逛GitHub ，看看最近有哪些流行的项目，久而久之，这差距就越来越大。那么我们如何像逛微博、朋友圈、空间一样逛github呢？</p>
-<ul>
-<li><p>首先，和微博、朋友圈、空间一样，你要想在你的朋友圈看到别人的动态，首先你的加人家好友对吧。所以首先我们得关注一些行业的大牛，例如关注Jake Wharton<br><img src="https://user-gold-cdn.xitu.io/2017/6/28/004cf735de5a0fee1bda1e62f374487f" alt=""><br>关注过后，我们就可以在github首页看到大神们star、fork等动作，可以了解大神们在此时此刻关注或者开源了那些优秀的开源项目。</p>
-</li>
-<li><p>利用github的Explore功能，发现当下热门的开源项目<br><img src="https://user-gold-cdn.xitu.io/2017/6/28/c3655076fcf069c8ea0818205c9c95ff" alt=""></p>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/30/it-github-learn/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/10/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/12/">Next &raquo;</a>
@@ -979,7 +987,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Deson
+    		&copy; 2019 Deson
     	</div>
 
       <div class='footer-left' style='margin-left:20px;color:#08c;'>
@@ -1077,11 +1085,23 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">ci</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1093,7 +1113,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mac</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1101,11 +1125,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mac</a>
+                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1121,11 +1141,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1133,7 +1149,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1141,7 +1157,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1153,15 +1169,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linxu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1169,19 +1181,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ci</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1194,6 +1194,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摄影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>

@@ -6,21 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.ding1996.cn">
-  <title>Archives: 2018/4 | Deson‘s Blog</title>
+  <title>React组件测试流程和规范 | Deson‘s Blog</title>
 
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="丁盛的博客，记录生活点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Deson‘s Blog">
-<meta property="og:url" content="http://www.ding1996.cn/archives/2018/04/page/2/index.html">
+  <meta name="description" content="测试依赖 mocha chai enzyme  使用Enzyme测试 shallow Rendering 测试虚拟dom DOM Rendering 测试真实dom  shallow浅渲染，将组件渲染成虚拟dom对象，但是只渲染第一层，不渲染所有子组件1234567891011import React from &apos;react&apos;;import &amp;#123;shallow, mount, render">
+<meta name="keywords" content="react,test">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React组件测试流程和规范">
+<meta property="og:url" content="http://www.ding1996.cn/2019/02/25/react-test/index.html">
 <meta property="og:site_name" content="Deson‘s Blog">
-<meta property="og:description" content="丁盛的博客，记录生活点滴">
+<meta property="og:description" content="测试依赖 mocha chai enzyme  使用Enzyme测试 shallow Rendering 测试虚拟dom DOM Rendering 测试真实dom  shallow浅渲染，将组件渲染成虚拟dom对象，但是只渲染第一层，不渲染所有子组件1234567891011import React from &apos;react&apos;;import &amp;#123;shallow, mount, render">
+<meta property="og:updated_time" content="2019-02-25T03:32:15.146Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Deson‘s Blog">
-<meta name="twitter:description" content="丁盛的博客，记录生活点滴">
+<meta name="twitter:title" content="React组件测试流程和规范">
+<meta name="twitter:description" content="测试依赖 mocha chai enzyme  使用Enzyme测试 shallow Rendering 测试虚拟dom DOM Rendering 测试真实dom  shallow浅渲染，将组件渲染成虚拟dom对象，但是只渲染第一层，不渲染所有子组件1234567891011import React from &apos;react&apos;;import &amp;#123;shallow, mount, render">
   
     <link rel="alternative" href="/atom.xml" title="Deson‘s Blog" type="application/atom+xml">
   
@@ -52,13 +54,13 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/uploads/touxiang.png" class="js-avatar">
+			<img src="/uploads/touxiang3.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Deson</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">以梦为马,越骑越傻;</p>
+		<p class="header-subtitle">不忘初心,厚积薄发;</p>
 		
 
 		<nav class="header-menu">
@@ -113,13 +115,13 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/uploads/touxiang.png" class="js-avatar">
+				<img src="/uploads/touxiang3.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Deson</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>以梦为马,越骑越傻;<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>不忘初心,厚积薄发;<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -162,36 +164,127 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-react-test" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/04/vscode-emmet-jsx/" class="archive-article-date">
-  	<time datetime="2018-04-04T02:13:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/04/vscode-emmet-jsx/">vscode react Emmet 补全</a>
+    <h1 class="article-title" itemprop="name">
+      React组件测试流程和规范
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/02/25/react-test/" class="archive-article-date">
+  	<time datetime="2019-02-25T03:21:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="测试依赖"><a href="#测试依赖" class="headerlink" title="测试依赖"></a>测试依赖</h3><ul>
+<li>mocha</li>
+<li>chai</li>
+<li>enzyme</li>
+</ul>
+<h3 id="使用Enzyme测试"><a href="#使用Enzyme测试" class="headerlink" title="使用Enzyme测试"></a>使用Enzyme测试</h3><ul>
+<li>shallow Rendering 测试虚拟dom</li>
+<li>DOM Rendering 测试真实dom</li>
+</ul>
+<h4 id="shallow"><a href="#shallow" class="headerlink" title="shallow"></a>shallow</h4><p>浅渲染，将组件渲染成虚拟dom对象，但是只渲染第一层，不渲染所有子组件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;shallow, mount, render&#125; <span class="keyword">from</span> <span class="string">'enzyme'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;expect&#125; <span class="keyword">from</span> <span class="string">'chai'</span>;</span><br><span class="line"><span class="keyword">import</span> Button <span class="keyword">from</span> <span class="string">'../src/index'</span>;</span><br><span class="line"></span><br><span class="line">describe(<span class="string">'Enzyme Shallow'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  it(<span class="string">'Button should be exist'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> button = shallow(<span class="xml"><span class="tag">&lt;<span class="name">Button</span>/&gt;</span></span>);</span><br><span class="line">    expect(button.hasClass(<span class="string">'u-button'</span>)).to.equal(<span class="literal">true</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>find只支持简单选择器</p>
+<ul>
+<li>.find(‘.classname’)</li>
+<li>.find(‘#id’)</li>
+<li>.find(‘tagname’)</li>
+<li>.find(‘tag.class’)</li>
+<li>.find(‘displayname’)</li>
+<li>.find(constructor)</li>
+</ul>
+<a id="more"></a>
+<h4 id="render"><a href="#render" class="headerlink" title="render"></a>render</h4><p>render将组件渲染成静态HTML字符串（通过cheerio解析库解析），可以分析HTML代码结构。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;render&#125; <span class="keyword">from</span> <span class="string">'enzyme'</span>;</span><br><span class="line"></span><br><span class="line">describe(<span class="string">'Enzyme Render'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  it(<span class="string">'Todo item should not have todo-done class'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> app = render(<span class="xml"><span class="tag">&lt;<span class="name">App</span>/&gt;</span></span>);</span><br><span class="line">    expect(app.find(<span class="string">'.todo-done'</span>).length).to.equal(<span class="number">0</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h4 id="mount"><a href="#mount" class="headerlink" title="mount"></a>mount</h4><p>mount用于将组件加载为真实DOM<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;mount&#125; <span class="keyword">from</span> <span class="string">'enzyme'</span>;</span><br><span class="line"></span><br><span class="line">describe(<span class="string">'Enzyme Mount'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  it(<span class="string">'Delete Todo'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> app = mount(<span class="xml"><span class="tag">&lt;<span class="name">App</span>/&gt;</span></span>);</span><br><span class="line">    <span class="keyword">let</span> todoLength = app.find(<span class="string">'li'</span>).length;</span><br><span class="line">    app.find(<span class="string">'button.delete'</span>).at(<span class="number">0</span>).simulate(<span class="string">'click'</span>);</span><br><span class="line">    expect(app.find(<span class="string">'li'</span>).length).to.equal(todoLength - <span class="number">1</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p><code>at</code>返回指定位置的子组件，<code>simulate</code>在组件上触发某种行为，第一个参数为事件，第二个参数为传入的参数</p>
+<h4 id="Enzyme-API"><a href="#Enzyme-API" class="headerlink" title="Enzyme API"></a>Enzyme API</h4><ul>
+<li>.get(index)：返回指定位置的子组件的DOM节点</li>
+<li>.at(index)：返回指定位置的子组件</li>
+<li>.first()：返回第一个子组件</li>
+<li>.last()：返回最后一个子组件</li>
+<li>.type()：返回当前组件的类型</li>
+<li>.text()：返回当前组件的文本内容</li>
+<li>.html()：返回当前组件的HTML代码形式</li>
+<li>.props()：返回根组件的所有属性</li>
+<li>.prop(key)：返回根组件的指定属性</li>
+<li>.state([key])：返回根组件的状态</li>
+<li>.setState(nextState)：设置根组件的状态</li>
+<li>.setProps(nextProps)：设置根组件的属性</li>
+</ul>
+<h3 id="chai的expect语法"><a href="#chai的expect语法" class="headerlink" title="chai的expect语法"></a>chai的expect语法</h3><p><a href="http://chaijs.com/api/bdd/" target="_blank" rel="noopener">官网</a></p>
+<h4 id="连接关键字"><a href="#连接关键字" class="headerlink" title="连接关键字"></a>连接关键字</h4><ul>
+<li>to</li>
+<li>be</li>
+<li>been</li>
+<li>is</li>
+<li>that</li>
+<li>which</li>
+<li>and</li>
+<li>has</li>
+<li>have</li>
+<li>with</li>
+<li>at</li>
+<li>of</li>
+<li>same</li>
+</ul>
+<p>这些关键字会在下面的例子中，有一些功能演示</p>
+<h4 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h4><ul>
+<li><p>.not<br>非</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">expect(foo).to.not.equal(<span class="string">'bar'</span>);</span><br><span class="line">expect(goodFn).to.not.throw(<span class="built_in">Error</span>);</span><br><span class="line">expect(&#123; <span class="attr">foo</span>: <span class="string">'baz'</span> &#125;).to.have.property(<span class="string">'foo'</span>).and.not.equal(<span class="string">'bar'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>.deep</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>支持原创是对你我最大的支持- -。<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/alipay-reward-image.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/wechatPay.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -199,27 +292,152 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">test</a>
+        		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.ding1996.cn/2019/02/25/react-test/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/02/25/react-components-01/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          组件划分原则
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2018/12/27/envconfig/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac 每次终端重启都需要重新运行 source ~/bash_profile</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
+
+ 
+   
+   <div id="SOHUCS" sid="React组件测试流程和规范" style="padding: 0px 30px 0px 46px;"></div>
+<script>
+(function () {
+    var appid = 'cyt1TF0Wb';  //你的appid
+    var conf = 'f6e1025511081660d801304520d2304b'; //你的CONF
+    var width = window.innerWidth || document.documentElement.clientWidth;
+    if (width < 960) {
+        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+    } else {
+        var loadJs = function (d, a) {
+            var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+            var b = document.createElement("script");
+            b.setAttribute("type", "text/javascript");
+            b.setAttribute("charset", "UTF-8");
+            b.setAttribute("src", d);
+            if (typeof a === "function") {
+                if (window.attachEvent) {
+                    b.onreadystatechange = function () {
+                        var e = b.readyState;
+                        if (e === "loaded" || e === "complete") {
+                            b.onreadystatechange = null;
+                            a()
+                        }
+                    }
+                } else {
+                    b.onload = a
+                }
+            }
+            c.appendChild(b)
+        };
+        loadJs("http://changyan.sohu.com/upload/changyan.js", function () {
+            window.changyan.api.config({appid: appid, conf: conf})
+        });
+    }
+})();
+</script>
+   
+ 
+
+
+
+
+
+
+
+
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2018/04/">&laquo; Prev</a><a class="page-number" href="/archives/2018/04/">1</a><span class="page-number current">2</span>
-    </nav>
-  
 
 
           </div>
@@ -239,7 +457,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Deson
+    		&copy; 2019 Deson
     	</div>
 
       <div class='footer-left' style='margin-left:20px;color:#08c;'>
@@ -259,8 +477,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -337,11 +555,23 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">ci</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -353,7 +583,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mac</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -361,11 +595,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mac</a>
+                <a href="javascript:void(0)" class="js-tag color2">vscode</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -381,11 +611,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -393,7 +619,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">parcel</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -401,7 +627,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -413,15 +639,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linxu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -429,19 +651,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">编辑器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ci</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -454,6 +664,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摄影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>
