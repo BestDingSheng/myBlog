@@ -1,7 +1,7 @@
 ---
 title: 'socket.io学习笔记'
 date: 2018-01-25 17:22:38
-tags: nodejs
+tags: node
 ---
 
 即时通信当下最火的技术莫非socket了，

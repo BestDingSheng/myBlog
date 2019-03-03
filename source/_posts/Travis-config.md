@@ -1,7 +1,7 @@
 ---
 title: Travis CI 学习笔记
 date: 2018-02-16 13:47:59
-tags:
+tags: ci
 ---
 
 Travis是什么？它是一个持续集成的工具

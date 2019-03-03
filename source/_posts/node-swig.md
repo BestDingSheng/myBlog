@@ -1,7 +1,7 @@
 ---
 title: node模板之swig基本教程
 date: 2018-01-28 00:02:41
-tags: nodejs
+tags: node
 ---
 
 完善ing。。。

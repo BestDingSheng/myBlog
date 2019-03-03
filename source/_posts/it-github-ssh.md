@@ -1,7 +1,7 @@
 ---
 title: github ssh配置
 date: 2018-03-14 09:02:55
-tags: css
+tags: [git,github]
 ---
 
 1 先看本地是否有ssh文件
